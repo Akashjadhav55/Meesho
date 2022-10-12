@@ -1,12 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import Route from './Routes/Route';
-import RouteElement from './Routes/Route';
+import { Routes, Route } from "react-router-dom"
+import Home from './components/Home/Home';
+import Navbar from './components/Navbar/Navbar';
+import Box from '@mui/material/Box'
 
 function App() {
   return (
-    <div className="App">
-      <RouteElement />
+    <div>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={ <Home/> } ></Route>
+      </Routes>
     </div>
   );
 }
