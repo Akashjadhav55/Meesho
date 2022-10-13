@@ -15,12 +15,18 @@
 .left{
     display: flex;
     align-items: center;
+    justify-content: right;
     gap: 20px;
+    width: 50%;
+    height: auto;
+    padding: 0 110px 0 0 ;
+    border: 1px solid;
+
 }
 .logo{
     height: 72px;
     width: 160px;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .search{
@@ -35,7 +41,7 @@
 
 .searchbar{
     height: 45px;
-    width: 354px;
+    width: 344px;
     text-align: left;
     border: none;
     cursor: text;
@@ -44,4 +50,90 @@
     line-height: 20px;
     color: #333333;
 
+}
+
+
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+    width: 50%;
+    height: 72px;
+    padding: 0 60px 0 0;
+}
+.downloadApp{
+    height: 72px;
+    width: 146px;
+    display: flex;
+    align-items: center;
+    margin: 0 24px 0 24px;
+    border-bottom : "3px solid #ffffff";
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-family: MyFont;
+    /* border: 1px solid; */
+}
+
+.mobilelogo{
+    height: 20px;
+    width: 20px;
+    margin: 0 8px 0 0;
+}
+
+.blank{
+    height: 40px;
+    width: 2px;
+    display: block;
+    background-color: #DFDFDF;
+    color: #000000;
+}
+.NavNames{
+    font-size: 16px;
+    color: #333333;
+    height: 20px;
+    width: auto;
+    /* border: 1px solid; */
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    min-width: auto;
+    min-height: auto;
+}
+.profile{
+    font-size: 16px;
+    font-family: MyFont;
+    margin: 0 0 0 24px;
+    height: 72px;
+    width: 80px;
+    border-bottom: 3px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    align-items: center;
+    justify-content: center;
+
+}
+.cart{
+    font-size: 16px;
+    margin: 0 24px 0 24px;
+    width: 34px;
+    height: 72px;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #ffffff;
+}
+.logo2{
+    /* border: 1px solid; */
+    margin: 0;
+    padding: 0;
+}
+.namesTwo{
+    color: #333333;
+    /* border: 1px solid; */
+    margin: 0;
+    padding: 0;
 }

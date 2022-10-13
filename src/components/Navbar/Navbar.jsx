@@ -3,7 +3,9 @@ import logo from '../../Img/meesho.png'
 import styles from './Navabar.module.css'
 import svg from '../svg'
 import SearchIcon from '@mui/icons-material/Search';
-import Phonelogo from './MobileLogo'
+import PhoneIphoneSharpIcon from '@mui/icons-material/PhoneIphoneSharp';
+import PermIdentitySharpIcon from '@mui/icons-material/PermIdentitySharp';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 function Navbar() {
   return (
@@ -18,8 +20,22 @@ function Navbar() {
         </div>
 
         <div className={styles.right}>
-          <div>
-            {/* <Phonelogo/> */}
+          <div className={styles.downloadApp}>
+            <PhoneIphoneSharpIcon className={styles.mobilelogo}  />
+            <p className={styles.NavNames} >Download App</p>
+          </div>
+          <div className={styles.blank}></div>
+          <div className={styles.downloadApp} >
+            <p className={styles.NavNames}>Become a Supplier</p>
+            </div>
+          <div className={styles.blank}></div>
+          <div className={styles.profile}>
+            <PermIdentitySharpIcon className={styles.logo2} />
+            <p className={styles.namesTwo}>Profile</p>
+          </div>
+          <div className={styles.cart}>
+            < ShoppingCartOutlinedIcon className={styles.logo2} />
+            <p className={styles.namesTwo}>Cart</p>
           </div>
         </div>
     </div>
