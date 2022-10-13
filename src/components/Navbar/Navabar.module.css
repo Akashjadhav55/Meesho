@@ -1,0 +1,47 @@
+@font-face {
+    font-family: MyFont ;
+    src: url(../../Img/MierA-Book.ttf);
+}
+.navbarContianerOuter{
+    height: 72px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: MyFont;
+}
+
+/* leftNav */
+.left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo{
+    height: 72px;
+    width: 160px;
+    border: 1px solid;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid #999999;
+    border-radius: 3px;
+}
+.SearchIcon{
+    padding: 12px 10px 12px 16px;
+}
+
+.searchbar{
+    height: 45px;
+    width: 354px;
+    text-align: left;
+    border: none;
+    cursor: text;
+    font-size: 16px;
+    letter-spacing: 0.04px;
+    line-height: 20px;
+    color: #333333;
+
+}
