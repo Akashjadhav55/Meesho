@@ -12,13 +12,12 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+import { Link } from 'react-router-dom';
+
 
 
 function Navbar() {
   return (
-    <React.Fragment >
-       <AppBar sx={{ background: "#3f51b5", marginLeft: "auto" }} style={{ padding: "8px" }}>
-       <Toolbar id="NavbarSection">
     <div className={styles.navbarContianerOuter} style={{ border : "1px solid yellow" }}>
         
         <div className={styles.left} >
@@ -36,7 +35,7 @@ function Navbar() {
           </div>
           <div className={styles.blank}></div>
           <div className={styles.downloadApp} >
-            <p className={styles.NavNames}>Become a Supplier</p>
+            <Link to="/supplier" className={styles.NavNames}>Become a Supplier</Link>
             </div>
           <div className={styles.blank}></div>
           <div className={styles.profile}>
@@ -45,13 +44,10 @@ function Navbar() {
           </div>
           <div className={styles.cart}>
             < ShoppingCartOutlinedIcon className={styles.logo2} />
-            <p className={styles.namesTwo}>Cart</p>
+            <Link to="/cart" className={styles.namesTwo}>Cart</Link>
           </div>
         </div>
     </div>
-    </Toolbar>
-    </AppBar>
-    </React.Fragment >
   )
 }
 

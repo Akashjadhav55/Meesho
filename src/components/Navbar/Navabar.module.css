@@ -103,6 +103,7 @@
     line-height: 20px;
     min-width: auto;
     min-height: auto;
+    text-decoration: none;
 }
 .profile{
     font-size: 16px;
@@ -142,4 +143,5 @@
     /* border: 1px solid; */
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
