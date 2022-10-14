@@ -28,6 +28,7 @@
 .logo{
     height: 55px;
     width: 200px;
+    flex-grow: 3;
     /* border: 1px solid; */
 }
 
