@@ -30,13 +30,15 @@ function Navbar() {
   return (
     <AppBar sx={{
       boxShadow : "none",
-      borderBottom : "1px solid lightGray"
+      borderBottom : "1px solid lightGray",
+      position : "static"
     }} >
+      <CssBaseline />
         <Toolbar
           className={styles.navbarContianerOuter}
           style={{ bg : "#ffffff" }}
         >
-          <div className={styles.left}>
+          <Typography className={styles.left}>
             <img src={logo} alt="img" className={styles.logo} />
             <div className={styles.search}>
               <SearchIcon className={styles.SearchIcon} />
@@ -47,7 +49,7 @@ function Navbar() {
                 className={styles.searchbar}
               />
             </div>
-          </div>
+          </Typography>
           {isMobile ? (
               <DrawerComponent/>
           ) : (
