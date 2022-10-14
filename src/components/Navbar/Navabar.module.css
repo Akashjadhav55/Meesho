@@ -31,6 +31,15 @@
     /* border: 1px solid; */
 }
 
+/* @media only screen and (max-width: 900px) {
+    .left{
+        padding-left: 200px;
+    }
+    .right{
+        padding-left: 200px;
+    }
+  } */
+
 .search{
     display: flex;
     align-items: center;

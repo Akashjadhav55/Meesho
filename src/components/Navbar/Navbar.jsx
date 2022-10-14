@@ -11,21 +11,33 @@ import {
   Toolbar,
   CssBaseline,
   Typography,
-  makeStyles,
   useTheme,
   useMediaQuery,
 } from "@mui/material";
+
+// import { makeStyles } from '@mui/styles';
+
 import { Link } from "react-router-dom";
 import { borderBottom } from "@mui/system";
 import  DrawerComponent  from './Drawer'
 
 
-
+// const useStyles = makeStyles((theme) => ({
+//   navlinks: {
+//     marginLeft: theme.spacing(5),
+//     display: "flex",
+//   },
+//   logo: {
+//     flexGrow: "1",
+//     cursor: "pointer",
+//   }
+// }));
 
 function Navbar() {
-
+  // const classes = useStyles();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const [open1, setopen1] = React.useState(false);
 
   return (
     <AppBar sx={{
@@ -38,7 +50,7 @@ function Navbar() {
           className={styles.navbarContianerOuter}
           style={{ bg : "#ffffff" }}
         >
-          <Typography className={styles.left}>
+          <div className={styles.left}>
             <img src={logo} alt="img" className={styles.logo} />
             <div className={styles.search}>
               <SearchIcon className={styles.SearchIcon} />
@@ -49,14 +61,24 @@ function Navbar() {
                 className={styles.searchbar}
               />
             </div>
-          </Typography>
+          </div>
           {isMobile ? (
               <DrawerComponent/>
           ) : (
           <div className={styles.right}>
-            <div className={styles.downloadApp}>
-              <PhoneIphoneSharpIcon className={styles.mobilelogo} />
-              <p className={styles.NavNames}>Download App</p>
+            <div className={styles.downloadApp} onMouseEnter={() => setopen1(true)}>
+                <PhoneIphoneSharpIcon className={styles.mobilelogo} />
+               <p className={styles.NavNames}>Download App</p>
+             {open1 ? (
+              <div
+              style={
+                theme === "light" ? null : { backgroundColor: "#1d1e1f", color: "white" }
+              }
+              >
+                <h2>Download From</h2>
+              </div>
+             ) : null}
+
             </div>
             <div className={styles.blank}></div>
             <div className={styles.downloadApp}>
