@@ -72,10 +72,11 @@ function Navbar() {
              {open1 ? (
               <div
               style={
-                theme === "light" ? null : { backgroundColor: "#1d1e1f", color: "white" }
+                theme === "light" ? null : { backgroundColor: "#ffffff"}
               }
               >
                 <h2>Download From</h2>
+
               </div>
              ) : null}
 
