@@ -21,8 +21,8 @@
     height: auto;
     padding: 0 120px 0 0 ;
     /* border: 1px solid; */
-
 }
+
 .logo{
     height: 55px;
     width: 200px;
@@ -72,7 +72,7 @@
     display: flex;
     align-items: center;
     margin: 0 24px 0 24px;
-    border-bottom : "3px solid #ffffff";
+    border-bottom : 3px solid #ffffff;
     font-size: 16px;
     letter-spacing: 0.5px;
     font-family: MyFont;
