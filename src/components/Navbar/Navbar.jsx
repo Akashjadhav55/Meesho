@@ -6,9 +6,19 @@ import SearchIcon from '@mui/icons-material/Search';
 import PhoneIphoneSharpIcon from '@mui/icons-material/PhoneIphoneSharp';
 import PermIdentitySharpIcon from '@mui/icons-material/PermIdentitySharp';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import {
+  AppBar,
+  Toolbar,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
+
 
 function Navbar() {
   return (
+    <React.Fragment >
+       <AppBar sx={{ background: "#3f51b5", marginLeft: "auto" }} style={{ padding: "8px" }}>
+       <Toolbar id="NavbarSection">
     <div className={styles.navbarContianerOuter} style={{ border : "1px solid yellow" }}>
         
         <div className={styles.left} >
@@ -39,6 +49,9 @@ function Navbar() {
           </div>
         </div>
     </div>
+    </Toolbar>
+    </AppBar>
+    </React.Fragment >
   )
 }
 
