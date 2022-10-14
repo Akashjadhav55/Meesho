@@ -1,55 +1,80 @@
-import React from 'react'
-import logo from '../../Img/meesho.png'
-import styles from './Navabar.module.css'
-import svg from '../svg'
-import SearchIcon from '@mui/icons-material/Search';
-import PhoneIphoneSharpIcon from '@mui/icons-material/PhoneIphoneSharp';
-import PermIdentitySharpIcon from '@mui/icons-material/PermIdentitySharp';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import React from "react";
+import logo from "../../Img/meesho.png";
+import styles from "./Navabar.module.css";
+import svg from "../svg";
+import SearchIcon from "@mui/icons-material/Search";
+import PhoneIphoneSharpIcon from "@mui/icons-material/PhoneIphoneSharp";
+import PermIdentitySharpIcon from "@mui/icons-material/PermIdentitySharp";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import {
   AppBar,
   Toolbar,
-  useMediaQuery,
+  CssBaseline,
+  Typography,
+  makeStyles,
   useTheme,
+  useMediaQuery,
 } from "@mui/material";
-import { Link } from 'react-router-dom';
-
-
+import { Link } from "react-router-dom";
+import { borderBottom } from "@mui/system";
+import  DrawerComponent  from './Drawer'
 
 function Navbar() {
-  return (
-    <div className={styles.navbarContianerOuter} style={{ border : "1px solid yellow" }}>
-        
-        <div className={styles.left} >
-            <img src={logo} alt="img" className={styles.logo}/>
-            <div className={styles.search} >
-              <SearchIcon className={styles.SearchIcon} />
-              <input type="text" placeholder='Try Saree, Kurti or Search by Product Code' name="name" className={styles.searchbar} />
-            </div>
-        </div>
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
-        <div className={styles.right}>
-          <div className={styles.downloadApp}>
-            <PhoneIphoneSharpIcon className={styles.mobilelogo}  />
-            <p className={styles.NavNames} >Download App</p>
-          </div>
-          <div className={styles.blank}></div>
-          <div className={styles.downloadApp} >
-            <Link to="/supplier" className={styles.NavNames}>Become a Supplier</Link>
+  return (
+    <AppBar sx={{
+      boxShadow : "none",
+      borderBottom : "1px solid lightGray"
+    }} >
+        <Toolbar
+          className={styles.navbarContianerOuter}
+          style={{ bg : "#ffffff" }}
+        >
+          <div className={styles.left}>
+            <img src={logo} alt="img" className={styles.logo} />
+            <div className={styles.search}>
+              <SearchIcon className={styles.SearchIcon} />
+              <input
+                type="text"
+                placeholder="Try Saree, Kurti or Search by Product Code"
+                name="name"
+                className={styles.searchbar}
+              />
             </div>
-          <div className={styles.blank}></div>
-          <div className={styles.profile}>
-            <PermIdentitySharpIcon className={styles.logo2} />
-            <p className={styles.namesTwo}>Profile</p>
           </div>
-          <div className={styles.cart}>
-            < ShoppingCartOutlinedIcon className={styles.logo2} />
-            <Link to="/cart" className={styles.namesTwo}>Cart</Link>
+          {isMobile ? (
+              <DrawerComponent/>
+          ) : (
+          <div className={styles.right}>
+            <div className={styles.downloadApp}>
+              <PhoneIphoneSharpIcon className={styles.mobilelogo} />
+              <p className={styles.NavNames}>Download App</p>
+            </div>
+            <div className={styles.blank}></div>
+            <div className={styles.downloadApp}>
+              <Link to="/supplier" className={styles.NavNames}>
+                Become a Supplier
+              </Link>
+            </div>
+            <div className={styles.blank}></div>
+            <div className={styles.profile}>
+              <PermIdentitySharpIcon className={styles.logo2} />
+              <p className={styles.namesTwo}>Profile</p>
+            </div>
+            <div className={styles.cart}>
+              <ShoppingCartOutlinedIcon className={styles.logo2} />
+              <Link to="/cart" className={styles.namesTwo}>
+                Cart
+              </Link>
+            </div>
           </div>
-        </div>
-    </div>
-  )
+          )}
+        </Toolbar>
+      {/* </Toolbar> */}
+    </AppBar>
+  );
 }
 
-export default Navbar
-
+export default Navbar;

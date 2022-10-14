@@ -1,11 +1,14 @@
-import { Divider, Drawer, List, ListItem, ListItemText } from "@mui/material";
 import React, { useState } from "react";
+import { Divider, Drawer, List, ListItem, IconButton, ListItemText } from "@mui/material";
+import styles from "./Navabar.module.css";
 import { Link } from "react-router-dom";
 import PhoneIphoneSharpIcon from '@mui/icons-material/PhoneIphoneSharp';
 import PermIdentitySharpIcon from '@mui/icons-material/PermIdentitySharp';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
-export default function Drawer() {
+import MenuIcon from '@mui/icons-material/Menu';
+
+ function DrawerComponent() {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
@@ -57,9 +60,11 @@ export default function Drawer() {
           <Divider />
         </List>
       </Drawer>
-      <IconButton onClick={() => setOpenDrawer(!openDrawer)}className={classes.icon}>
+      <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
         <MenuIcon />
       </IconButton>
     </>
   );
 }
+export default DrawerComponent;
+
