@@ -1,6 +1,9 @@
 import { Divider, Drawer, List, ListItem, ListItemText } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import PhoneIphoneSharpIcon from '@mui/icons-material/PhoneIphoneSharp';
+import PermIdentitySharpIcon from '@mui/icons-material/PermIdentitySharp';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 export default function Drawer() {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -9,7 +12,7 @@ export default function Drawer() {
     <>
       <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
         <List>
-          <ListItem>
+          <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link>
                 <div style={{ display: "flex", alignItem: "center" }}>
@@ -20,7 +23,7 @@ export default function Drawer() {
             </ListItemText>
           </ListItem>
           <Divider />
-          <ListItem>
+          <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link to="/supplier">
                 <p> Become a Supplier</p>
@@ -28,7 +31,7 @@ export default function Drawer() {
             </ListItemText>
           </ListItem>
           <Divider />
-          <ListItem>
+          <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link to="/">
                 <div style={{ display: "flex", alignItem: "center" }}>
@@ -39,7 +42,7 @@ export default function Drawer() {
             </ListItemText>
           </ListItem>
           <Divider />
-          <ListItem>
+          <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link to="/cart">
                 <div style={{ display: "flex", alignItem: "center" }}>
@@ -54,6 +57,9 @@ export default function Drawer() {
           <Divider />
         </List>
       </Drawer>
+      <IconButton onClick={() => setOpenDrawer(!openDrawer)}className={classes.icon}>
+        <MenuIcon />
+      </IconButton>
     </>
   );
 }
