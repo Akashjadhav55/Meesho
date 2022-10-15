@@ -66,17 +66,14 @@ function Navbar() {
               <DrawerComponent/>
           ) : (
           <div className={styles.right}>
-            <div className={styles.downloadApp} onMouseEnter={() => setopen1(true)}>
+            <div className={styles.downloadApp} onMouseEnter={() => setopen1(true)}   style={open1 === true ? { borderBottom : "3px solid #f43397" , color : "#f43397" } : { }}>
                 <PhoneIphoneSharpIcon className={styles.mobilelogo} />
-               <p className={styles.NavNames}>Download App</p>
+               <p className={styles.NavNames}   style={ open1 === true ? { color : "#f43397" } : { }} >Download App</p>
              {open1 ? (
-              <div
-              style={
-                open1 === "true" ? { borderBottom : "3px solid #f43397", color : "#f43397" } : { }
-              }
-              >
-                <h2>Download From</h2>
-
+              <div className={styles.dropdown} onMouseLeave={() => setopen1(false)}>
+                <h2 style={{  width : "170px" }} >Download From</h2>
+                <img src="https://images.meesho.com/images/pow/playstore-icon-big.png" alt="playstore" style={{ height : "100%", width : "100%",}} />
+                <img src="https://images.meesho.com/images/pow/appstore-icon-big.png" alt="" style={{ height : "100%", width : "100%",  }} />
               </div>
              ) : null}
 

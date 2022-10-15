@@ -153,3 +153,24 @@
     padding: 0;
     text-decoration: none;
 }
+
+.dropdown {
+    position: relative;
+    display: grid;
+    gap: 10px 30px;
+    width: auto;
+    grid-template-columns: repeat(1, 1fr);
+    color: black;
+    background-color: white;
+    padding: 10% 10% 10% 10%;
+    top: 210%;
+    right: 80%;
+    border: 1px solid;
+    font-size: 15px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+  .dropdown > *{
+    border: 1px solid;
+  }
