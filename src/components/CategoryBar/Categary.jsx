@@ -18,8 +18,7 @@ function Categary() {
             <p>Women Ethnic</p>
             {open1 ? (
               <div className={styles.dropdown} onMouseLeave={() => setopen1(false)} >
-                hell
-
+                <h1>hello</h1>
               </div>
              ) : null}
         </div>
