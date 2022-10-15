@@ -72,7 +72,7 @@ function Navbar() {
              {open1 ? (
               <div
               style={
-                theme === "light" ? null : { backgroundColor: "#ffffff"}
+                open1 === "true" ? { borderBottom : "3px solid #f43397", color : "#f43397" } : { }
               }
               >
                 <h2>Download From</h2>
