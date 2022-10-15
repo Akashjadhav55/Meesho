@@ -1,0 +1,34 @@
+.container{
+    height: 52px;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid lightgray ;
+}
+.container > div {
+    padding-left: 50px;
+    border: 1px solid;
+
+}
+
+.div1{
+    
+}
+
+.dropdown {
+    position: absolute;
+    text-align: left;
+    color: #333333;
+    background-color: white;
+    padding: 1% 1% 1% 1%;
+    top: 100%;
+    line-height: 15px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    font-family: MyFont;  
+    box-sizing: border-box;
+  }
