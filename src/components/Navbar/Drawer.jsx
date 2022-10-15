@@ -18,7 +18,8 @@ import MenuIcon from '@mui/icons-material/Menu';
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link>
-                <div style={{ display: "flex", alignItem: "center" }}>
+                <div style={{ display: "flex", alignItem: "center" 
+              }}>
                   <PhoneIphoneSharpIcon className={styles.mobilelogo} />
                   <p className={styles.NavNames}>Download App</p>
                 </div>

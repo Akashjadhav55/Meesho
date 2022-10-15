@@ -14,6 +14,7 @@ import {
   useTheme,
   useMediaQuery,
 } from "@mui/material";
+import { BsSearch , BsBag } from "react-icons/bs";
 
 // import { makeStyles } from '@mui/styles';
 
@@ -38,6 +39,8 @@ function Navbar() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const [open1, setopen1] = React.useState(false);
+  const [open2, setopen2] = React.useState(false);
+  const [open3, setopen3] = React.useState(false);
 
   return (
     <AppBar sx={{
@@ -45,15 +48,14 @@ function Navbar() {
       borderBottom : "1px solid lightGray",
       position : "static"
     }} >
-      <CssBaseline />
+      {/* <CssBaseline /> */}
         <Toolbar
           className={styles.navbarContianerOuter}
-          style={{ bg : "#ffffff" }}
         >
           <div className={styles.left}>
             <img src={logo} alt="img" className={styles.logo} />
             <div className={styles.search}>
-              <SearchIcon className={styles.SearchIcon} />
+              <BsSearch className={styles.SearchIcon} />
               <input
                 type="text"
                 placeholder="Try Saree, Kurti or Search by Product Code"
@@ -70,10 +72,10 @@ function Navbar() {
                 <PhoneIphoneSharpIcon className={styles.mobilelogo} />
                <p className={styles.NavNames}   style={ open1 === true ? { color : "#f43397" } : { }} >Download App</p>
              {open1 ? (
-              <div className={styles.dropdown} onMouseLeave={() => setopen1(false)}>
+              <div className={styles.dropdown1} onMouseLeave={() => setopen1(false)}>
                 <h2 style={{  width : "170px" }} >Download From</h2>
                 <img src="https://images.meesho.com/images/pow/playstore-icon-big.png" alt="playstore" style={{ height : "100%", width : "100%",}} />
-                <img src="https://images.meesho.com/images/pow/appstore-icon-big.png" alt="" style={{ height : "100%", width : "100%",  }} />
+                <img src="https://images.meesho.com/images/pow/appstore-icon-big.png" alt="" style={{ height : "100%", width : "100%",}}/>
               </div>
              ) : null}
 
@@ -85,13 +87,27 @@ function Navbar() {
               </Link>
             </div>
             <div className={styles.blank}></div>
-            <div className={styles.profile}>
+
+
+            <div className={styles.profile} onMouseEnter={() => setopen2(true)}  >
               <PermIdentitySharpIcon className={styles.logo2} />
               <p className={styles.namesTwo}>Profile</p>
+              {open2 ? (
+              <div className={styles.dropdown} onMouseLeave={() => setopen2(false)}>
+                <h3>Hello User</h3>
+                <p>To access your Meesho account</p>
+                <div className={styles.NavProfileCart}>
+                  <BsBag/>
+                  <h3>My Order</h3>
+                </div>
+              </div>
+             ) : null}
             </div>
-            <div className={styles.cart}>
+
+
+            <div className={styles.cart} >
               <ShoppingCartOutlinedIcon className={styles.logo2} />
-              <Link to="/cart" className={styles.namesTwo}>
+              <Link to="/cart" className={styles.namesTwo} >
                 Cart
               </Link>
             </div>
