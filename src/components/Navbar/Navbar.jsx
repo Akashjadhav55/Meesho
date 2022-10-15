@@ -14,7 +14,7 @@ import {
   useTheme,
   useMediaQuery,
 } from "@mui/material";
-import { BsSearch , BsBag } from "react-icons/bs";
+import { BsSearch , BsBag, BsCart2 } from "react-icons/bs";
 import Button from '@mui/material/Button';
 
 // import { makeStyles } from '@mui/styles';
@@ -109,7 +109,7 @@ function Navbar() {
 
 
             <div className={styles.cart} >
-              <ShoppingCartOutlinedIcon className={styles.logo2} />
+              <BsCart2 className={styles.logo2} />
               <Link to="/cart" className={styles.namesTwo} >
                 Cart
               </Link>
