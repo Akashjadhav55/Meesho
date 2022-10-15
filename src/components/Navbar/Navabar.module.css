@@ -182,7 +182,7 @@
     color: #333333;
     background-color: white;
     padding: 1% 1% 1% 1%;
-    top: 90%;
+    top: 100%;
     line-height: 15px;
     border-radius: 15px 15px 15px 15px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -196,6 +196,13 @@
   .dropdown > *{
     height: 100%;
     width: 100%;
-    border: 1px solid;
+    /* border: 1px solid; */
 
+}
+
+.NavSigUpButton{
+    background-color: #f43397;
+    height: 48px;
+    width: 100%;
+    margin: 0 0 10px 0;
 }

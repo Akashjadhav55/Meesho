@@ -15,6 +15,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import { BsSearch , BsBag } from "react-icons/bs";
+import Button from '@mui/material/Button';
 
 // import { makeStyles } from '@mui/styles';
 
@@ -89,15 +90,17 @@ function Navbar() {
             <div className={styles.blank}></div>
 
 
-            <div className={styles.profile} onMouseEnter={() => setopen2(true)}  >
+            <div className={styles.profile} onMouseEnter={() => setopen2(true)}  style={open2 === true ? { borderBottom : "3px solid #f43397" , color : "#f43397" } : { }} >
               <PermIdentitySharpIcon className={styles.logo2} />
-              <p className={styles.namesTwo}>Profile</p>
+              <p className={styles.namesTwo}  style={open2 === true ? { color : "#f43397" } : { }} >Profile</p>
               {open2 ? (
               <div className={styles.dropdown} onMouseLeave={() => setopen2(false)}>
                 <h3>Hello User</h3>
                 <p>To access your Meesho account</p>
+                <Button variant="contained" style={{backgroundColor : "#f43397", padding : "10px"}} >Sign Up</Button>
                 <div className={styles.NavProfileCart}>
                   <BsBag/>
+                
                   <h3>My Order</h3>
                 </div>
               </div>
