@@ -61,8 +61,8 @@ import MenuIcon from '@mui/icons-material/Menu';
           <Divider />
         </List>
       </Drawer>
-      <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
-        <MenuIcon />
+      <IconButton onClick={() => setOpenDrawer(!openDrawer)} >
+        <MenuIcon  />
       </IconButton>
     </>
   );

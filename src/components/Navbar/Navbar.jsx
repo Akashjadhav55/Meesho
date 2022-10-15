@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../../Img/meesho.png";
 import styles from "./Navabar.module.css";
-import svg from "../svg";
 import SearchIcon from "@mui/icons-material/Search";
 import PhoneIphoneSharpIcon from "@mui/icons-material/PhoneIphoneSharp";
 import PermIdentitySharpIcon from "@mui/icons-material/PermIdentitySharp";
@@ -53,7 +52,7 @@ function Navbar() {
         <Toolbar
           className={styles.navbarContianerOuter}
         >
-          <div className={styles.left}>
+          <div className={styles.left} >
             <img src={logo} alt="img" className={styles.logo} />
             <div className={styles.search}>
               <BsSearch className={styles.SearchIcon} />
