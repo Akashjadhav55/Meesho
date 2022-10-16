@@ -202,26 +202,32 @@ function Categary() {
         <p>Kids</p>
         {open4 ? (
           <div className={styles.dropdown} onMouseLeave={() => setopen4(false)}>
-            Boys & Girls 2+ Years
-Dresses
-
-Infant 0-2 Years
-Rompers
-
-Toys & Accessories
-Soft Toys
-
-Footwear
-
-Stationery
-
-Watches
-
-Bags & Backpacks
-
-Baby Care
-All Baby Care
-
+            <div>
+              <p>Boys & Girls 2+ Years</p>
+              <div>
+                <p>Dresses</p>
+              </div>
+            </div>
+            <div>
+              <p>Infant 0-2 Years</p>
+              <div><p>Rompers</p></div>
+            </div>
+            <div>
+              <p>Toys & Accessories</p>
+              <div>
+                <p>Soft Toys</p>
+                <p>Footwear</p>
+                <p>Stationery</p>
+                <p>Watches</p>
+                <p>Bags & Backpacks</p>
+              </div>
+            </div>
+            <div>
+              <p>Baby Care</p>
+              <div>
+                <p>All Baby Care</p>
+              </div>
+            </div>
           </div>
         ) : null}
       </div>
@@ -236,7 +242,8 @@ All Baby Care
         <p>Home & Kitchen</p>
         {open5 ? (
           <div className={styles.dropdown} onMouseLeave={() => setopen5(false)}>
-            hell
+            
+            
           </div>
         ) : null}
       </div>
