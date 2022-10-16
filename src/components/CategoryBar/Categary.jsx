@@ -242,8 +242,32 @@ function Categary() {
         <p>Home & Kitchen</p>
         {open5 ? (
           <div className={styles.dropdown} onMouseLeave={() => setopen5(false)}>
-            
-            
+            <div>
+              <p>Home Furnishing</p>
+              <div>
+                <p>Home Furnishing</p>
+                <p>Doormats</p>
+                <p>Curtains & Sheers</p>
+                <p>Cushions & Cushion Covers</p>
+                <p>Mattress Protectors</p>
+              </div>
+            </div>            
+            <div>
+              <p>Home Decor</p>
+              <div>
+                <p>All Home Decor</p>
+                <p>Stickers</p>
+                <p>Clocks</p>
+                <p>Showpieces</p>
+              </div>
+            </div>
+            <div>
+              <p>Kitchen & Dining</p>
+              <div>
+                <p>Kitchen Storage</p>
+                <p>Cookware & Bakeware</p>
+              </div>
+            </div>
           </div>
         ) : null}
       </div>
@@ -258,7 +282,29 @@ function Categary() {
         <p>Beauty & Health</p>
         {open6 ? (
           <div className={styles.dropdown} onMouseLeave={() => setopen6(false)}>
-            hell
+            <div>
+              <p>Make up</p>
+              <div>
+                <p>Face</p>
+                <p>Eyes</p>
+                <p>Lips</p>
+                <p>Nails</p>
+              </div>
+            </div>
+            <div>
+              <P>Wellness</P>
+              <div>
+                <p>Sanitizers</p>
+                <p>Oral Care</p>
+                <p>Feminine Hygiene</p>
+              </div>
+            </div>
+            <div>
+              <p>Skincare</p>
+              <div>
+                <p>Deodorants</p>
+              </div>
+            </div>
           </div>
         ) : null}
       </div>
@@ -273,7 +319,29 @@ function Categary() {
         <p>Jewllery & Accessories</p>
         {open7 ? (
           <div className={styles.dropdown} onMouseLeave={() => setopen7(false)}>
-            hell
+            <div>
+              <p>Jewellery</p>
+              <div>
+                <p>Jewellery Set</p>
+                <p>Earrings</p>
+                <p>Mangalsutras</p>
+                <p>Studs</p>
+                <p>Bangles</p>
+                <p>Necklaces</p>
+                <p>Rings</p>
+                <p>Anklets</p>
+              </div>
+            </div>
+            <div>
+              <p>Women Accessory</p>
+              <div>
+                <p>Bags</p>
+                <p>Watches</p>
+                <p>Hair Accessories</p>
+                <p>Sunglasses</p>
+                <p>Socks</p>
+              </div>
+            </div>
           </div>
         ) : null}
       </div>
@@ -288,7 +356,7 @@ function Categary() {
         <p>Bags & Footwear</p>
         {open8 ? (
           <div className={styles.dropdown} onMouseLeave={() => setopen8(false)}>
-            hell
+            
           </div>
         ) : null}
       </div>
