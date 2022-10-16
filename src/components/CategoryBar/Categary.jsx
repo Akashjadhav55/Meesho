@@ -356,7 +356,39 @@ function Categary() {
         <p>Bags & Footwear</p>
         {open8 ? (
           <div className={styles.dropdown} onMouseLeave={() => setopen8(false)}>
-            
+            <div>
+              <p>Women Bags</p>
+              <div>
+                <p>All Women Bags</p>
+                <p>Handbags</p>
+                <p>Clutches</p>
+                <p>Slingbags</p>
+              </div>
+            </div>
+            <div>
+              <p>Men Bags</p>
+              <div>
+                <p>All Men Bags</p>
+                <p>Men Wallets</p>
+              </div>
+            </div>
+            <div>
+              <p>Men Footwear</p>
+              <div>
+                <p>Sports Shoes</p>
+                <p>Casual Shoes</p>
+                <p>Formal Shoes</p>
+                <p>Sandals</p>
+              </div>
+            </div>
+            <div>
+              <p>Women Footwear</p>
+              <div>
+                <p>Flats</p>
+                <p>Bellies</p>
+                <p>Juttis</p>
+              </div>
+            </div>
           </div>
         ) : null}
       </div>
@@ -371,7 +403,23 @@ function Categary() {
         <p>Electronics</p>
         {open9 ? (
           <div className={styles.dropdown} onMouseLeave={() => setopen9(false)}>
-            hell
+            <div>
+              <p>Mobile & Accessories</p>
+              <div>
+                <p>All Mobile & Accessories</p>
+                <p>Smartwatches</p>
+                <p>Mobile Holders</p>
+                <p>Mobile cases and covers</p>
+              </div>
+            </div>
+            <div>
+              <p>Appliances</p>
+              <div>
+                <p>All Appliances</p>
+                <p>Grooming</p>
+                <p>Home Appliances</p>
+              </div>
+            </div>
           </div>
         ) : null}
       </div>
