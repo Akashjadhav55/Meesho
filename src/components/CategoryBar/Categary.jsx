@@ -292,7 +292,7 @@ function Categary() {
               </div>
             </div>
             <div>
-              <P>Wellness</P>
+              <p>Wellness</p>
               <div>
                 <p>Sanitizers</p>
                 <p>Oral Care</p>
