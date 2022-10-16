@@ -18,7 +18,22 @@ function Categary() {
             <p>Women Ethnic</p>
             {open1 ? (
               <div className={styles.dropdown} onMouseLeave={() => setopen1(false)} >
-                <h1>hello</h1>
+                <div>
+                  <p>All Women Ethnic</p>
+                  <p>View All</p>
+                </div>
+                <div>
+                  <p>Sarees</p>
+                  <div>
+                    <p>All Sarees</p>
+                    <p>Silk Sarees</p>
+                    <p>Cotton Silk Sarees</p>
+                    <p>Cotton Sarees</p>
+                    <p>Georgette Sarees</p>
+                    <p>Chiffon Sarees</p>
+                    <p>Satin Sarees</p>
+                  </div>
+                </div>
               </div>
              ) : null}
         </div>
@@ -41,7 +56,7 @@ function Categary() {
              ) : null}
         </div>
         <div onMouseEnter={() => setopen4(true)} style={ open4 === true ? { borderBottom : "3px solid #f43397", color : "#f43397" } : {} }>
-            <p>Women Ethnic</p>
+            <p>Kids</p>
             {open4 ? (
               <div className={styles.dropdown} onMouseLeave={() => setopen4(false)}>
                 hell
@@ -50,7 +65,7 @@ function Categary() {
              ) : null}
         </div>
         <div onMouseEnter={() => setopen5(true)} style={ open5 === true ? { borderBottom : "3px solid #f43397", color : "#f43397" } : {} }>
-            <p>Women Ethnic</p>
+            <p>Home & Kitchen</p>
             {open5 ? (
               <div className={styles.dropdown} onMouseLeave={() => setopen5(false)}>
                 hell
@@ -59,7 +74,7 @@ function Categary() {
              ) : null}
         </div>
         <div onMouseEnter={() => setopen6(true)} style={ open6 === true ? { borderBottom : "3px solid #f43397", color : "#f43397" } : {} }>
-            <p>Women Ethnic</p>
+            <p>Beauty  Health</p>
             {open6 ? (
               <div className={styles.dropdown} onMouseLeave={() => setopen6(false)}>
                 hell
@@ -68,7 +83,7 @@ function Categary() {
              ) : null}
         </div>
         <div onMouseEnter={() => setopen7(true)} style={ open7 === true ? { borderBottom : "3px solid #f43397", color : "#f43397" } : {} }>
-            <p>Women Ethnic</p>
+            <p>Jewllery & Accessories</p>
             {open7 ? (
               <div className={styles.dropdown} onMouseLeave={() => setopen7(false)}>
                 hell
@@ -77,7 +92,7 @@ function Categary() {
              ) : null}
         </div>
         <div onMouseEnter={() => setopen8(true)} style={ open8 === true ? { borderBottom : "3px solid #f43397", color : "#f43397" } : {} }>
-            <p>Women Ethnic</p>
+            <p>Bags & Footwear</p>
             {open8 ? (
               <div className={styles.dropdown} onMouseLeave={() => setopen8(false)}>
                 hell
@@ -86,7 +101,7 @@ function Categary() {
              ) : null}
         </div>
         <div onMouseEnter={() => setopen9(true)} style={ open9 === true ? { borderBottom : "3px solid #f43397", color : "#f43397" } : {} }>
-            <p>Women Ethnic</p>
+            <p>Electronics</p>
             {open9 ? (
               <div className={styles.dropdown} onMouseLeave={() => setopen9(false)}>
                 hell
