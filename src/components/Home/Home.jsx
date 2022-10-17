@@ -11,6 +11,9 @@ export default function Home() {
                 <img src="" alt="" />
                 <p>Free Delivery</p>
               </div>
+              <div>
+                <img src="" alt="" />
+              </div>
             </div>
           </div>
           <div>
