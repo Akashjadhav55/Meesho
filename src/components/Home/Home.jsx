@@ -15,6 +15,10 @@ export default function Home() {
                 <img src="" alt="" />
                 <p>Cash On Delivery</p>
               </div>
+              <div>
+                <img src="" alt="" />
+                <p>Easy Returns</p>
+              </div>
             </div>
           </div>
           <div>
