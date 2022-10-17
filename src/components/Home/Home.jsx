@@ -6,7 +6,7 @@ export default function Home() {
         <div>
           <div>
             <h1>Lowest Prices Best Qaulity Shopping</h1>
-            
+            <div></div>
           </div>
           <div>
 
