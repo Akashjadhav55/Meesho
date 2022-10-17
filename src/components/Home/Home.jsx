@@ -13,6 +13,7 @@ export default function Home() {
               </div>
               <div>
                 <img src="" alt="" />
+                <p>Cash On Delivery</p>
               </div>
             </div>
           </div>
