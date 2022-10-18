@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+.containerAds{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: cadetblue;
+}
+
+@media screen and (min-width: 900px) {
+    
+    .containerAds{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    
+    .containerAds > div > img{
+        height: auto;
+        width: auto;
+    }
+  }
