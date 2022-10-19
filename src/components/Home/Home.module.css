@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+
 }
 /* 2 */
 .threeElement{
@@ -43,7 +44,10 @@
 
 
    /* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) { 
+@media screen and (min-width: 576px) {
+    .containerAds{
+        border: 1px solid;
+    }
     .AdsImage{
         height: 15rem;
         width: 20rem;
@@ -51,13 +55,12 @@
     .containerTwo {
         display: flex;
         justify-content: center;
-        
         flex-direction: column;
     }
     .threeElement{
         display: flex;
         align-items: center;
-        justify-content: left;
+        justify-content: center;
     }
     .threeElement > div{
         display: flex;
