@@ -1,40 +1,98 @@
 *{
     box-sizing: border-box;
 }
+/* 1 */
 .containerAds{
     display: flex;
     flex-direction: column;
     /* grid-template-columns: repeat(1, 1fr); */
     background-color: cadetblue;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin: 0 2rem 0 2rem;
     justify-content: center;
     align-items: center;
 }
 
-@media screen and (min-width: 1050px) {
-    
-    .containerAds{
-        flex-direction: row;
-        /* grid-template-columns: repeat(2, 1fr); */
+.containerTwo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* 2 */
+.threeElement{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.threeElement > div{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    border: 1px solid;
+}
+
+/* 3 */
+.AdsImage{
+    height: 10rem;
+    width: 15rem;
+    border: 1px solid;
+    padding: 0 10px 0 10px;
+}
+.AdsImagecontainer{
+    border: 1px solid blue;
+}
+
+
+   /* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) { 
+    .AdsImage{
+        height: 15rem;
+        width: 20rem;
     }
-  }
+    .containerTwo {
+        display: flex;
+        justify-content: center;
+        
+        flex-direction: column;
+    }
+    .threeElement{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .threeElement > div{
+        display: flex;
+        align-items: center;
+        padding: 0px 10px 0px 10px;
+        border: 1px solid;
+    }
 
-  @media screen and (max-width: 500px) {
-   
-
-  }
-  /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-
-    
  }
 
+
+
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+@media screen and  (min-width: 768px) { 
+    .containerAds{
+        flex-direction: row;
+    }
+    .threeElement{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .threeElement > div{
+        display: flex;
+        align-items: center;
+        padding: 0px 10px 0px 10px;
+        border: 1px solid;
+    }
+ }
+
+
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {  }
+
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  }

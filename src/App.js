@@ -9,8 +9,8 @@ import Categary from './components/CategoryBar/Categary';
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Categary/>
+      {/* <Navbar/>
+      <Categary/> */}
       <Routes>
         <Route path='/' element={ <Home/> } ></Route>
       </Routes>
