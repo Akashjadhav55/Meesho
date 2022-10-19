@@ -94,11 +94,48 @@
 
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+    .containerAds{
+        margin: 0 10rem 0 10rem;
+    }
+ }
 
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+    .containerAds{
+        margin: 0 15rem 0 15rem;
+    }
+ }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) { 
+    .containerAds{
+        margin: 0 20rem 0 20rem;
+    }
+    .AdsImage{
+        height: 338px;
+        width: 518px;
+    }
+    .containerTwo{
+        border: 1px solid red;
+        padding: 20px 20px 20px 20px;
+    }
+    .threeElement{
+        margin: 10px auto;
+
+    }
+ }
+
+
+ .button{
+    background-color: #f43397;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 28px 10px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 20rem;
+    margin: 10px auto;
+ }

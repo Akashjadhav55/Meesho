@@ -1,6 +1,8 @@
 import { style } from "@mui/system";
 import React from "react";
 import styles from "./Home.module.css"
+import { Button } from '@mui/material'
+import logo from "../../Img/playstore.webp"
 
 export default function Home() {
   return (
@@ -21,6 +23,7 @@ export default function Home() {
               <p>Easy <br /> Returns</p>
             </div>
           </div>
+          <button  className={styles.button} variant="contained"> <img src={logo} alt="" /> Download the Meesho App </button>
         </div>
         <div className={styles.AdsImagecontainer}>
           <img className={styles.AdsImage} src="https://images.meesho.com/images/marketing/1631722939962.webp" alt="" />
