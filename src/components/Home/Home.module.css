@@ -6,8 +6,8 @@
     flex-direction: column;
     /* grid-template-columns: repeat(1, 1fr); */
     background-color: cadetblue;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 20rem;
+    margin-right: 20rem;
     justify-content: center;
     align-items: center;
 }
@@ -22,4 +22,22 @@
 
   @media screen and (max-width: 500px) {
    
+
   }
+  /* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+    
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
