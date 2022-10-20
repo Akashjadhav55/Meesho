@@ -110,18 +110,44 @@
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
     .containerAds{
-        margin: 0 20rem 0 20rem;
+        margin: 1rem 20rem 1rem 20rem;
     }
     .AdsImage{
         height: 338px;
         width: 518px;
     }
     .containerTwo{
-        padding: 20px 20px 20px 20px;
+        padding: 10px 20px 10px 10px;
+        /* border: 1px solid; */
+        /* margin: 0px 10px 0 0px; */
+        /* height: 30px; */
+    }
+    .containerTwo > div {
+        margin: 0px 10px 0 10px;
+    }
+    .containerTwo > h1{
+        font-size: 48px;
+        margin: 10px auto;
+        /* border: 1px solid; */
     }
     .threeElement{
-        margin: 10px auto;
+        /* margin: 10px auto; */
+        /* border: 1px solid; */
+        justify-content: space-evenly;
+        font-weight: 600;
     }
+    .threeElement > div > img {
+        padding-right: 15px;
+    }
+/*     
+.blank{
+    height: 40px;
+    width: 1px;
+    display: block;
+    background-color: #8d8888;
+    color: #000000;
+    border: 1px solid;
+} */
     .button{
         background-color: #f43397;
         display: flex;
@@ -131,7 +157,7 @@
         font-size: 18px;
         border-radius: 5px;
         width: 20rem;
-        margin: 10px auto;
+        /* margin: 10px auto; */
         border: none;
         color: white;
     }
@@ -142,4 +168,29 @@
  }
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+.Heading{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #333333;
+    padding-top: 20px;
+    /* border: 1px solid; */
+}
+
+
+.AdsImage2{
+    
+}
  
