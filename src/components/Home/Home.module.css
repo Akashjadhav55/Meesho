@@ -103,41 +103,45 @@
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     .containerAds{
-        margin: 0 15rem 0 15rem;
+        margin: 1rem 15rem 1rem 15rem;
     }
  }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
     .containerAds{
-        margin: 1rem 20rem 1rem 20rem;
+        margin: 50px 240px 50px 240px;
     }
     .AdsImage{
-        height: 338px;
+        height: 348px;
         width: 518px;
     }
     .containerTwo{
-        padding: 10px 20px 10px 10px;
+        padding: 10px 40px 10px 40px;
         /* border: 1px solid; */
         /* margin: 0px 10px 0 0px; */
         /* height: 30px; */
     }
-    .containerTwo > div {
-        margin: 0px 10px 0 10px;
-    }
+
     .containerTwo > h1{
-        font-size: 48px;
-        margin: 10px auto;
+        font-size: 48px;        
+        width: 100%;
         /* border: 1px solid; */
     }
     .threeElement{
-        /* margin: 10px auto; */
-        /* border: 1px solid; */
         justify-content: space-evenly;
         font-weight: 600;
     }
     .threeElement > div > img {
         padding-right: 15px;
+        height: 25px;
+    }
+    .threeElement > div{
+        width: 100%;
+    }
+    .threeElement > div > p{
+        width: 100%;
+        border-right: 1px solid ;
     }
 /*     
 .blank{
@@ -181,16 +185,120 @@
 
 /*  */
 .Heading{
-    text-align: center;
-    font-size: 36px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    /* -webkit-box-align: center; */
+    align-items: center;
+    color: rgb(51, 51, 51);
     font-weight: 700;
-    color: #333333;
-    padding-top: 20px;
-    /* border: 1px solid; */
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin: 0 240px 0 240px;
+}
+.lines{
+    width: 22%;
+    height: 1px;
+    background: rgb(247, 168, 202);
+    /* margin: 240px; */
 }
 
-
+/*                                              */
 .AdsImage2{
-    
+    display: flex;
+    margin: 48px 240px 60px 240px;
+    background-image: url(https://images.meesho.com/images/marketing/1649759774600.jpg);
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 20px 24px 22px;
+    height: 546px;
+    border-radius: 4px;
+    background-size: 100% 100%;
+
 }
- 
+.ImageFirst{
+    height: 429px;
+    cursor: pointer;
+}
+.IamgeSecond{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    -webkit-box-pack: center;
+}
+.img1{
+    height: 291px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.img2{
+    /* border: 1px solid; */
+    height: 291px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/*  ------------------------ */
+.homeContImage{
+    display: flex;
+    margin-bottom: 60px;
+    height: 546px;
+    width: 100%;
+    background-image: url(https://images.meesho.com/images/marketing/1664343269674.jpg);
+    background-size: 100% 100%;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 24px 0px 28px;
+    margin: 0 240px 0 240px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+.contianer1{
+    border: 1px solid;
+    /* width: 339px; */
+    /* height: 288px; */
+    margin-right: 30px;
+    position: relative;
+    text-align: center;
+}
+.container2{    
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border: 5px solid;
+    /* margin-right: 30px; */
+    position: relative;
+    text-align: center;
+}
+.img3{
+    cursor: pointer;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.img4{
+    cursor: pointer;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.img5{
+    cursor: pointer;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
