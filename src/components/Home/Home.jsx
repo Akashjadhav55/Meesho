@@ -54,23 +54,38 @@ export default function Home() {
 
     <div className={styles.homeContImage}>
       <div className={styles.container1}>
-        {/* <img src="https://images.meesho.com/images/marketing/1664368165450.webp" alt="" /> */}
+        <img src="https://images.meesho.com/images/marketing/1664368165450.webp" alt="" />
       </div>
       <div className={styles.container2}>
         <div className={styles.img3}> 
           <img src="https://images.meesho.com/images/marketing/1649760808952.webp" alt="" /> 
           <img src="https://images.meesho.com/images/marketing/1664364866805.webp" alt="" />
         </div>
-        <div className={styles.img4}> 
+        <div className={styles.img3}> 
           <img src="https://images.meesho.com/images/marketing/1649760703179.webp" alt="" />
           <img src="https://images.meesho.com/images/marketing/1664364917657.webp" alt="" /> 
         </div>
-        <div className={styles.img5}> 
+        <div className={styles.img3}> 
           <img src="https://images.meesho.com/images/marketing/1649760786763.webp" alt="" />
           <img src="https://images.meesho.com/images/marketing/1664364898513.webp" alt="" />
         </div>
       </div>
     </div>
+
+    <div className={styles.homeContImage3}>
+      <img src="https://images.meesho.com/images/pow/downloadBannerDesktop.webp" alt="" />
+      <div className={styles.child1OfCont} >
+        <h4 style={{color : "rgb(45,133,248)", fontSize :"28px" }} >Become a Reseller and</h4>
+        <h1 style={{color : "rgb(244,51,151)", fontSize : "42px"}}  >Start your Online Business</h1>
+        <h1 style={{ color:"rgb(244,51,151)", fontSize:"42px" }} >with Zero Investment</h1>
+        <div className={styles.Child}>
+          <div className={styles.child1}><img src="https://images.meesho.com/images/pow/playstoreIcon.webp" alt="" /></div>
+          <div className={styles.child1}><img src="https://images.meesho.com/images/pow/appstoreIcon.webp" alt="" /></div>
+        </div>
+      </div>
+    </div>
+
+    
     </div>
 
   );
