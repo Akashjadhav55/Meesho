@@ -1,4 +1,3 @@
-import { style } from "@mui/system";
 import React from "react";
 import styles from "./Home.module.css"
 import { Button } from '@mui/material'
@@ -32,11 +31,13 @@ export default function Home() {
         </div>
     </div>
 
+
     <div className={styles.Heading}>
       <div className={styles.lines}></div>
         <span className={styles.text} >Top Categories to choose from</span>
       <div className={styles.lines}></div>
     </div>
+
 
     <div className={styles.AdsImage2} >
       <div className={styles.ImageFirst}>
@@ -51,6 +52,7 @@ export default function Home() {
         </div>
       </div>
     </div>
+
 
     <div className={styles.homeContImage}>
       <div className={styles.container1}>
@@ -72,6 +74,7 @@ export default function Home() {
       </div>
     </div>
 
+
     <div className={styles.homeContImage3}>
       <img src="https://images.meesho.com/images/pow/downloadBannerDesktop.webp" alt="" />
       <div className={styles.child1OfCont} >
@@ -85,7 +88,20 @@ export default function Home() {
       </div>
     </div>
 
+
+    <div className={styles.fetchContainer}>
+      <div className={styles.left}>
+
+aa
+
+      </div>
+      <div className={styles.right}>
+aa
+      </div>
+    </div>
+
     
+
     </div>
 
   );

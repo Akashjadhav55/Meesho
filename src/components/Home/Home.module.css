@@ -318,3 +318,19 @@
     width: 180px;
     height: 48px;
 }
+
+.fetchContainer{
+     display: flex;
+     margin: 0 120px 0 120px;
+}
+.left{
+    height: auto;
+    width: 20%;
+    border: 1px solid #f43397;
+}
+.right{
+    border: 1px solid;
+
+    height: auto;
+    width: 80%;
+}
