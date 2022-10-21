@@ -3,6 +3,15 @@ import styles from "./Home.module.css"
 import { Button } from '@mui/material'
 import logo from "../../Img/playstore.webp"
 
+
+
+import OutlinedInput from '@mui/material/OutlinedInput';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
+
+
 export default function Home() {
   return (
     <div>
@@ -88,12 +97,44 @@ export default function Home() {
       </div>
     </div>
 
+    <div className={styles.head}>
+      <h1>Product For You</h1>
+    </div>
 
     <div className={styles.fetchContainer}>
       <div className={styles.left}>
-
-aa
-
+        <div  className={styles.sorting}>
+        <p>Sort by:</p>
+        <select > 
+          <option value="relevance">Relevance</option>
+          <option value="new">New Arrivals</option>
+          <option value="priceHigh">Price( High to Low)</option>
+          <option value="priceLow" selected>Price(Low to High)</option>
+          <option value="rating">Rating</option>
+          <option value="discount">Discount</option>
+        </select>
+        <FormControl sx={{ m: 1, width: 300 }}>
+        <InputLabel id="demo-multiple-name-label">Name</InputLabel>
+        <Select
+          labelId="demo-multiple-name-label"
+          id="demo-multiple-name"
+          multiple
+          value={personName}
+          onChange={handleChange}
+          input={<OutlinedInput label="Name" />}
+          MenuProps={MenuProps}
+        >
+           <option value="relevance">Relevance</option>
+          <option value="new">New Arrivals</option>
+          <option value="priceHigh">Price( High to Low)</option>
+          <option value="priceLow" selected>Price(Low to High)</option>
+          <option value="rating">Rating</option>
+          <option value="discount">Discount</option>
+          
+        </Select>
+      </FormControl>
+        </div>
+        
       </div>
       <div className={styles.right}>
 aa
