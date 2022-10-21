@@ -115,23 +115,7 @@ export default function Home() {
         </select>
         <FormControl sx={{ m: 1, width: 300 }}>
         <InputLabel id="demo-multiple-name-label">Name</InputLabel>
-        <Select
-          labelId="demo-multiple-name-label"
-          id="demo-multiple-name"
-          multiple
-          value={personName}
-          onChange={handleChange}
-          input={<OutlinedInput label="Name" />}
-          MenuProps={MenuProps}
-        >
-           <option value="relevance">Relevance</option>
-          <option value="new">New Arrivals</option>
-          <option value="priceHigh">Price( High to Low)</option>
-          <option value="priceLow" selected>Price(Low to High)</option>
-          <option value="rating">Rating</option>
-          <option value="discount">Discount</option>
-          
-        </Select>
+       
       </FormControl>
         </div>
         
