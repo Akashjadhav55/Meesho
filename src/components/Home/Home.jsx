@@ -113,10 +113,6 @@ export default function Home() {
           <option value="rating">Rating</option>
           <option value="discount">Discount</option>
         </select>
-        <FormControl sx={{ m: 1, width: 300 }}>
-        <InputLabel id="demo-multiple-name-label">Name</InputLabel>
-       
-      </FormControl>
         </div>
         
       </div>
