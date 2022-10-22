@@ -117,7 +117,7 @@ export default function Home() {
         
       </div>
       <div className={styles.right}>
-aa
+
       </div>
     </div>
 
