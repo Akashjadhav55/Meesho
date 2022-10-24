@@ -4,7 +4,7 @@ import { Button } from '@mui/material'
 import logo from "../../Img/playstore.webp"
 
 
-
+import Product from "./Product"
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -117,7 +117,7 @@ export default function Home() {
         
       </div>
       <div className={styles.right}>
-aa
+        <Product/>
       </div>
     </div>
 
