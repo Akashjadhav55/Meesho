@@ -5,7 +5,7 @@ function Product() {
 
   return (
     <div>
-      as
+      
         
     </div>
   )
