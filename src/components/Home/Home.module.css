@@ -1,4 +1,10 @@
+@font-face {
+    font-family: MyFont ;
+    src: url(../../Img/MierA-Book.ttf);
+}
+
 *{
+    font-family: MyFont;
     box-sizing: border-box;
 }
 /* 1 */
@@ -333,7 +339,8 @@
 /* ----------------------fetch---------- */
 .fetchContainer{
      display: flex;
-     margin: 0 120px 0 120px;
+     justify-content: center;
+     align-items: flex-start;
 }
 .left{
     height: auto;
@@ -386,16 +393,78 @@
 
 
 
-
-
+.items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    margin-left: 20px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
 .img{   
-    height: 250px;
-    width: 250px;
+    height: 232px;
+    width: 227px;
 
 }
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40px;
+    padding-left: 10px;
+
+}
+.free {
+    color: black;
+    font-size: 14px;
+    padding-left: 10px;
+
+}
+.price > p{
+    font-size: 12px;
+    text-align: start;
+    margin-top: 22px;
+    padding: 5px;
+}
+
 .rating{
     display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+
 }
+.rate{
+    font-size: 16px;
+    background-color: #23BB75;
+    padding: 4px 8px 4px 8px ;
+    display: inline-flex;
+    border-radius: 16px;
+    text-align: left;
+    color: white;
+}
+.count{
+    padding: 5px 0 0 10px;
+}
+.items1{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+    color: #999999;
+    cursor: pointer;
+}
+.name{
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+
+}
+
 
 
 

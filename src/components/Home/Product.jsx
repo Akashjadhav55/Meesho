@@ -1,3 +1,4 @@
+import { style } from '@mui/system'
 import axios from 'axios'
 import React from 'react'
 import styles from "./Home.module.css"
@@ -22,18 +23,24 @@ function Product() {
   }
 
   return (
-    <div>
+    <div  className={styles.items} >
       {
         data.map((item) =>(
-          <div style={{border : "1px solid" , display : "grid", gridTemplate : "repeat(2, 1fr)"}}>
-            <img className={styles.img} src={item.image} alt="" />
-            <h3>{item.title}</h3>
-            <h2>{item.price}</h2>
-            <p>Free Delivery</p>
-            <div className={styles.rating}>
-              <p>{item.rating.rate}</p>
-              <p>{item.rating.count}</p>
+          <div className={styles.items1} >
+            <div className={styles.image}>
+              <img className={styles.img} src={item.image} alt="" />
             </div>
+            <p className={styles.name}>{item.title}</p>
+            <div className={styles.price}>
+              <h2 style={{color : "#000000"}} >  ₹ {item.price}</h2>
+              <p>onwards</p>
+            </div>
+            <p className={styles.free}>Free Delivery</p>
+            <div className={styles.rating}>
+              <p className={styles.rate}>{item.rating.rate} *</p>
+              <p className={styles.count} >{item.rating.count} Reviews</p>
+            </div>
+
           </div>
         ))
       }
