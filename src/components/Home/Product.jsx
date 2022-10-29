@@ -11,7 +11,7 @@ function Product() {
   }, [])
 
   const fetchData = () => {
-    axios.get("https://fakestoreapi.com/products", {
+    axios.get("http://localhost:3002/products", {
       responseType : "json",
     })
     .then(function(response){
