@@ -39,7 +39,7 @@ export default function ProductDetails() {
       <div>
         <div>
           <p>{data.category}</p>
-          
+          <p> </p>
           <div className={styles.rating}>
               <p className={styles.rate}>{data.rating.rate} *</p>
               <p className={styles.count} >{data.rating.count} Reviews</p>
