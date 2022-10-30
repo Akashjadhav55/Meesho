@@ -1,0 +1,59 @@
+@font-face {
+    font-family: MyFont ;
+    src: url(../../../Img/MierA-Book.ttf);
+}
+*{
+    font-family: MyFont;
+}
+
+.container{
+    margin: 0 120px 0 120px;
+    border: 1px solid;
+    display: flex;
+}
+.ImageContainer{
+    border: 1px solid;
+}
+
+.image{
+    height: 470px;
+    width: 347px;
+}
+
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+}
+
+
+
+
+
+
+
+
+/*------------- right -----------------*/
+
+/* 1st div */
+.rating{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+
+}
+.rate{
+    font-size: 16px;
+    background-color: #23BB75;
+    padding: 4px 8px 4px 8px ;
+    display: inline-flex;
+    border-radius: 16px;
+    text-align: left;
+    color: white;
+}
+.count{
+    padding: 5px 0 0 10px;
+}

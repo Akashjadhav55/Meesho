@@ -2,9 +2,16 @@ import { style } from '@mui/system'
 import axios from 'axios'
 import React from 'react'
 import styles from "./Home.module.css"
+import { useNavigate } from "react-router-dom";
 
 function Product() {
   const [data , setdata] = React.useState([])
+  const navigate = useNavigate();
+
+
+  const showProductDetails = (id) => {
+    navigate(`/products/${id}`);
+  };
 
   React.useEffect(() => {
     fetchData()
@@ -26,7 +33,11 @@ function Product() {
     <div  className={styles.items} >
       {
         data.map((item) =>(
-          <div className={styles.items1} >
+          <div className={styles.items1}  
+            key={item.id}
+            onClick={() => {
+              showProductDetails(item.id)
+            }} >
             <div className={styles.image}>
               <img className={styles.img} src={item.image} alt="" />
             </div>

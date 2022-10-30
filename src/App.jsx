@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Box from '@mui/material/Box'
 import Categary from './components/CategoryBar/Categary';
+import ProductDetails from './components/pages/productDetails/productDetails';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Categary/>
       <Routes>
         <Route path='/' element={ <Home/> } ></Route>
+        <Route path="/products/:id" element={<ProductDetails />} />
       </Routes>
     </div>
   );
