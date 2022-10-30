@@ -7,23 +7,46 @@
 }
 
 .container{
-    margin: 0 120px 0 120px;
-    border: 1px solid;
+
+}
+
+.containerFirst{
+    padding-top: 20px;
+    margin: 0 240px 0 320px;
+    /* border: 1px solid; */
     display: flex;
 }
-.ImageContainer{
-    border: 1px solid;
+.left{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-bottom: 1px solid #d4cdcd;
+    width: 40%;
+    height: auto;
+    margin-right: 50px;
+    color: #333333;
 }
 
 .image{
-    height: 470px;
+    height: 450px;
     width: 347px;
 }
 
 .buttonContainer{
     display: flex;
     align-items: center;
-    border: 1px solid;
+    padding: 20px 0 20px 0;
+    justify-content: space-between;
+    color: #f43397;
+
+
+}
+.buttonContainer > Button{
+    color: #000000;
+    font-size: 15px;
+    padding: 12px 12px 12px 12px;
+    width: 200px;
+
 }
 
 
@@ -34,6 +57,12 @@
 
 
 /*------------- right -----------------*/
+
+.right{
+    width: 55%;
+    color: #333333;
+}
+
 
 /* 1st div */
 .rating{
@@ -59,4 +88,52 @@
 .free {
     color: black;
     font-size: 14px;
+}
+
+
+/* --------div-2--------- */
+.sizesContainer{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0 20px 0;
+}
+.buttonstyles{
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 5px 25px 5px 25px ;
+    margin: 5px;
+}
+
+
+
+/* ------div-3----- */
+.headname{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* ----div-4---- */
+.shopDetails{
+    padding-top: 10px;
+}
+.NameSold{
+    font-size: 20px;
+    font-weight: 700;
+}
+.shopName{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ratingContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.fetch{
+    padding-top: 10px;
+}
+.name3{
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 20px;
 }

@@ -53,7 +53,9 @@ function Navbar() {
           className={styles.navbarContianerOuter}
         >
           <div className={styles.left} >
+            <Link to="/">
             <img src={logo} alt="img" className={styles.logo} />
+            </Link>
             <div className={styles.search}>
               <BsSearch className={styles.SearchIcon} />
               <input
