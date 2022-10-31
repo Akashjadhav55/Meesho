@@ -110,8 +110,9 @@ function Navbar() {
 
 
             <div className={styles.cart} >
-              <ShoppingCartOutlinedIcon className={styles.logo2} />
+              
               <Link to="/cart" className={styles.namesTwo} >
+              <ShoppingCartOutlinedIcon className={styles.logo2} />
                 Cart
               </Link>
             </div>

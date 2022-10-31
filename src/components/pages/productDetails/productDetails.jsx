@@ -1,21 +1,31 @@
 import axios from 'axios'
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import styles from './product.module.css'
 import { Button } from '@mui/material'
 import StoreIcon from '@mui/icons-material/Store';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import Product from '../../Home/Product'
+import Categary from '../../CategoryBar/Categary';
+import { useNavigate } from "react-router-dom";
+
+
+
+
 
 export default function ProductDetails() {
   const { id } = useParams() 
-  const [data, setData] = React.useState({})
+  const [data, setData] = React.useState([])
+  const [cartData , setCartData] = React.useState([])
   const [button1, setButton1 ] = React.useState(false)
   const [button2, setButton2 ] = React.useState(false)
   const [button3, setButton3 ] = React.useState(false)
   const [button4, setButton4 ] = React.useState(false)
   const [button5, setButton5 ] = React.useState(false)
+  const [isDisabled, setIsDisabled] = React.useState(false);
+  const navigate = useNavigate();
+
 
 
 
@@ -33,6 +43,43 @@ export default function ProductDetails() {
   React.useState(() => {
     getSearchData();
   }, []);
+
+  const sendToCart = (data) => {
+      // console.log(data)
+      axios.post('http://localhost:3002/cart', {data})
+      .then(function (response) {
+        // console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+      // console.log(cart.data.id)
+  }
+
+  const getDataFromCart = () =>{
+    axios.get('http://localhost:3002/cart', {
+      responseType : "json",
+    })
+    .then(function(response){
+      setCartData(response.data)
+      
+    })
+    .then(function(error){
+      console.log(error)
+    })
+  }
+  React.useState(() => {
+    getDataFromCart()
+  }, []);
+
+
+  function disableButton() {
+    setIsDisabled(true);
+  }
+
+  const NavigationToCart = () =>{
+    navigate("/cart")
+  }
 
   const set1 = () => {
     setButton1(true)
@@ -71,16 +118,37 @@ export default function ProductDetails() {
   }
 
 
+  console.log(cartData)
   return (
+    <>
+    <Categary/>
     <div className={styles.container}>
+
     <div className={styles.containerFirst}>
       <div className={styles.left}>
         <div>
           <img src={data.image} alt="" className={styles.image} />
         </div>
         <div className={styles.buttonContainer}>
-          <Button variant="outlined"> <ShoppingCartIcon/> Add to Cart</Button>
-          <Button style={{backgroundColor : "#f43397", color: "#fff"}} variant="contained"  > <KeyboardDoubleArrowRightIcon/> Buy Now</Button>
+          <Button disabled={isDisabled} variant="outlined" 
+          onClick={() => {
+            getSearchData()
+            sendToCart(data)
+            disableButton()
+          }}> 
+            <ShoppingCartIcon/>
+            Add To Cart
+           {/* {cartData.map((item) => (
+            <div key={item.data.id}>  
+               { item.data.id === data.id ?  <> Go To Cart</> : <>Add To Cart</>
+              }
+            </div>
+           ))}
+           */}
+          </Button>
+         
+          <Button onClick={NavigationToCart} style={{backgroundColor : "#f43397", color: "#fff"}} variant="contained"  >  <KeyboardDoubleArrowRightIcon/> Buy Now</Button>
+         
         </div>
       </div>
       <div className={styles.right}>
@@ -97,11 +165,11 @@ export default function ProductDetails() {
         <div className={styles.sizesContainer}>
           <p > Select Size </p>
           <div>
-             <button className={styles.buttonstyles} onClick={() => set1()} onDoubleClick={() => setButton1(false)} style={button1 == true ? {border: "1px solid #f43397 ", color : "#f43397" } : {} }  variant="outlined">  S </button>
-             <button className={styles.buttonstyles}  onClick={() => set2()} onDoubleClick={() => setButton2(false)} style={button2 == true ? {border: "1px solid #f43397 ", color : "#f43397"} : {} } variant="outlined">  M </button>
-             <button className={styles.buttonstyles} onClick={() => set3()} onDoubleClick={() => setButton3(false)} style={button3 == true ? {border: "1px solid #f43397 ", color : "#f43397"} : {} } variant="outlined">  L </button>
-             <button className={styles.buttonstyles} onClick={() => set4()}  onDoubleClick={() => setButton4(false)} style={button4 == true ? {border: "1px solid #f43397 ", color : "#f43397"} : {} } variant="outlined">  XL </button>
-             <button className={styles.buttonstyles} onClick={() => set5()} onDoubleClick={() => setButton5(false)} style={button5 == true ? {border: "1px solid #f43397 ", color : "#f43397"} : {} } variant="outlined">  XXL </button>
+             <button className={styles.buttonstyles} onClick={() => set1()} onDoubleClick={() => setButton1(false)} style={button1 === true ? {border: "1px solid #f43397 ", color : "#f43397" } : {} }  variant="outlined">  S </button>
+             <button className={styles.buttonstyles}  onClick={() => set2()} onDoubleClick={() => setButton2(false)} style={button2 === true ? {border: "1px solid #f43397 ", color : "#f43397"} : {} } variant="outlined">  M </button>
+             <button className={styles.buttonstyles} onClick={() => set3()} onDoubleClick={() => setButton3(false)} style={button3 === true ? {border: "1px solid #f43397 ", color : "#f43397"} : {} } variant="outlined">  L </button>
+             <button className={styles.buttonstyles} onClick={() => set4()}  onDoubleClick={() => setButton4(false)} style={button4 === true ? {border: "1px solid #f43397 ", color : "#f43397"} : {} } variant="outlined">  XL </button>
+             <button className={styles.buttonstyles} onClick={() => set5()} onDoubleClick={() => setButton5(false)} style={button5 === true ? {border: "1px solid #f43397 ", color : "#f43397"} : {} } variant="outlined">  XXL </button>
           </div>
         </div>
 
@@ -142,5 +210,6 @@ export default function ProductDetails() {
       
       
     </div>
+    </>
   )
 }

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Home.module.css"
 import { Button } from '@mui/material'
 import logo from "../../Img/playstore.webp"
+import Categary from '../CategoryBar/Categary';
 
 
 import Product from "./Product"
@@ -15,7 +16,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 export default function Home() {
   return (
     <div>
-
+           <Categary/>
     <div className={styles.containerAds}>
         <div className={styles.containerTwo}>
           <h1>Lowest Prices Best Qaulity Shopping</h1>

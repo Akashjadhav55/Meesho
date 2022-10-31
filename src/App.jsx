@@ -6,15 +6,17 @@ import Navbar from './components/Navbar/Navbar';
 import Box from '@mui/material/Box'
 import Categary from './components/CategoryBar/Categary';
 import ProductDetails from './components/pages/productDetails/productDetails';
+import Cart from './components/pages/Cart/Cart';
 
 function App() {
   return (
     <div>
       <Navbar/>
-      <Categary/>
+      {/* <Categary/> */}
       <Routes>
         <Route path='/' element={ <Home/> } ></Route>
         <Route path="/products/:id" element={<ProductDetails />} />
+        <Route path="/cart" element={ <Cart/> } ></Route>
       </Routes>
     </div>
   );
