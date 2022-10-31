@@ -12,11 +12,13 @@ export default function Cart() {
     const [button3, setbutton3] = React.useState(false);
 
     let CarTotalAmount = 0;
-
-    for (let i = 0; i < cartData.length; i++) {
-      cartData.map((ele) => {})
-      CarTotalAmount += cartData[i].quantity * cartData[i].mrp;
-    }
+      cartData.map((ele) => {
+        for (let i = 0; i < cartData.length; i++) {
+        CarTotalAmount += (ele.data.quantity) * (ele.data.price);
+        console.log(CarTotalAmount)
+        }
+      })
+      console.log(CarTotalAmount)
   
 
     React.useEffect(() => {
