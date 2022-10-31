@@ -11,6 +11,10 @@
 
 .container{
     margin: 0 240px 0 240px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* border: 1px solid; */
 }
 
 /* left */
@@ -53,4 +57,12 @@
 .items > p{
     color: #f43397;
     font-weight: 700;
+}
+
+.right{
+    margin-top: 50px;
+    border-left: 1px solid #cecece;
+    /* border: 1px solid; */
+    padding: 30px;
+    font-size: 18px;
 }
