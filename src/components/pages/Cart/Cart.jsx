@@ -29,7 +29,7 @@ export default function Cart() {
   React.useEffect(() => {
     fetchData();
   }, []);
-
+// hello
   const fetchData = () => {
     axios
       .get("http://localhost:3002/products", {
