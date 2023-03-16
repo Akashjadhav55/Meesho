@@ -19,11 +19,12 @@ export default function Cart() {
     }
   });
   console.log(CarTotalAmount);
-
   const removeFromCart = (id) => {
     http:axios
       .delete(`http://localhost:3002/cart/${id}`)
-      .then(getDataFromCart())
+      .then(() => {
+        getDataFromCart()
+      })
   };
 
   React.useEffect(() => {

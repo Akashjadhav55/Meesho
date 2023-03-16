@@ -1,9 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Routes, Route } from "react-router-dom"
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
-import Box from '@mui/material/Box'
 import Categary from './components/CategoryBar/Categary';
 import ProductDetails from './components/pages/productDetails/productDetails';
 import Cart from './components/pages/Cart/Cart';
