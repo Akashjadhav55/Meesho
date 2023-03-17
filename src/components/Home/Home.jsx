@@ -1,23 +1,21 @@
 import React from "react";
-import styles from "./Home.module.css"
-import { Button } from '@mui/material'
-import logo from "../../Img/playstore.webp"
-import Categary from '../CategoryBar/Categary';
+import styles from "./Home.module.css";
+import { Button } from "@mui/material";
+import logo from "../../Img/playstore.webp";
+import Categary from "../CategoryBar/Categary";
 
-
-import Product from "./Product"
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
-
+import Product from "./Product";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
 
 export default function Home() {
   return (
     <div>
-           <Categary/>
-    <div className={styles.containerAds}>
+      <Categary />
+      {/* <div className={styles.containerAds}>
         <div className={styles.containerTwo}>
           <h1>Lowest Prices Best Qaulity Shopping</h1>
           <div className={styles.threeElement}>
@@ -39,17 +37,16 @@ export default function Home() {
         <div className={styles.AdsImagecontainer}>
           <img className={styles.AdsImage} src="https://images.meesho.com/images/marketing/1631722939962.webp" alt="" />
         </div>
-    </div>
+    </div> */}
 
-
+      {/* 
     <div className={styles.Heading}>
       <div className={styles.lines}></div>
         <span className={styles.text} >Top Categories to choose from</span>
       <div className={styles.lines}></div>
-    </div>
+    </div> */}
 
-
-    <div className={styles.AdsImage2} >
+      {/* <div className={styles.AdsImage2} >
       <div className={styles.ImageFirst}>
           <img src="https://images.meesho.com/images/marketing/1649760442043.webp" alt="" />
       </div>
@@ -61,10 +58,9 @@ export default function Home() {
           <img src="https://images.meesho.com/images/marketing/1649759799809.webp" alt="" />
         </div>
       </div>
-    </div>
+    </div> */}
 
-
-    <div className={styles.homeContImage}>
+      {/* <div className={styles.homeContImage}>
       <div className={styles.container1}>
         <img src="https://images.meesho.com/images/marketing/1664368165450.webp" alt="" />
       </div>
@@ -82,9 +78,9 @@ export default function Home() {
           <img src="https://images.meesho.com/images/marketing/1664364898513.webp" alt="" />
         </div>
       </div>
-    </div>
+    </div> */}
 
-
+      {/* 
     <div className={styles.homeContImage3}>
       <img src="https://images.meesho.com/images/pow/downloadBannerDesktop.webp" alt="" />
       <div className={styles.child1OfCont} >
@@ -96,35 +92,14 @@ export default function Home() {
           <div className={styles.child1}><img src="https://images.meesho.com/images/pow/appstoreIcon.webp" alt="" /></div>
         </div>
       </div>
-    </div>
+    </div> */}
 
-    <div className={styles.head}>
+      {/* <div className={styles.head}>
       <h1>Product For You</h1>
+    </div> */}
+
+          <Product />
+  
     </div>
-
-    <div className={styles.fetchContainer}>
-      <div className={styles.left}>
-        <div  className={styles.sorting}>
-        <p>Sort by:</p>
-        <select > 
-          <option value="relevance">Relevance</option>
-          <option value="new">New Arrivals</option>
-          <option value="priceHigh">Price( High to Low)</option>
-          <option value="priceLow" selected>Price(Low to High)</option>
-          <option value="rating">Rating</option>
-          <option value="discount">Discount</option>
-        </select>
-        </div>
-        
-      </div>
-      <div className={styles.right}>
-        <Product/>
-      </div>
-    </div>
-
-    
-
-    </div>
-
   );
 }

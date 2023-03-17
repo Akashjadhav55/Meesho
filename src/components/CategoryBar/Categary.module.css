@@ -1,5 +1,5 @@
 .container{
-    height: 52px;
+    height: 82px;
     width: 100%;
     /* border: 1px solid; */
     display: flex;
@@ -12,7 +12,16 @@
 .container > div {
     padding: 2px 20px 1px 20px ;
     /* border: 1px solid; */
-
+}
+.container {
+  overflow: scroll;
+  overflow-y: hidden;
+  display: flex;
+  scroll-snap-type: x mandatory;
+}
+.container .box{
+  flex-shrink: 0;
+  scroll-snap-align: start;
 }
 
 
